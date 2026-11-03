@@ -1,0 +1,4 @@
+<resources>
+    <!-- DayNight: يدعم الوضع الداكن تلقائيًا -->
+    <style name="Theme.Tawasoli" parent="Theme.Material3.DayNight.NoActionBar" />
+</resources>
