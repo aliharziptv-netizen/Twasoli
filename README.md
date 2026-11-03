@@ -1,11 +1,13 @@
-# Tawasoli Android
+# Tawasoli Android Project
 
-This repository is prepared to build the Android APK using GitHub Actions.
+Android source project based on the supplied archive.
 
 ## Build
-1. Add the Android project source at the repository root (the folder containing `gradlew` and `settings.gradle`).
-2. Open **Actions**.
-3. Run **Build Android APK**.
-4. Download the artifact named **Tawasoli-debug-apk** from the completed workflow.
+GitHub Actions builds a debug APK on pushes to `main` or `master` and when manually started.
 
-The workflow expects a Gradle Android project with a Gradle wrapper and a debug APK output.
+The project uses Android Gradle Plugin 8.2.2 and Gradle 8.2. CI downloads Gradle 8.2 directly because the original archive did not include wrapper scripts/JAR.
+
+## APK output
+`app/build/outputs/apk/debug/app-debug.apk`
+
+No Firebase credentials or private secrets are included.
